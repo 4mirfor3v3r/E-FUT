@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".DetailActivity">
 
     <View
         android:id="@+id/detail_iv"
         android:transitionName="imgtranslate"
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:background="#ccc"
+        android:layout_height="340dp" >
+    </View>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/detail_price"
+        android:text="Rp. 100.000/jam"
+        android:layout_marginTop="-76dp"
+        android:layout_marginLeft="24dp"
+        android:textStyle="bold"
+        android:elevation="1dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/detail_price_bg"
+        android:layout_below="@id/detail_iv"
+        android:padding="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_below="@id/detail_iv"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/detail_bottom_bg"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="42dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:text="Lapangan Biru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>
