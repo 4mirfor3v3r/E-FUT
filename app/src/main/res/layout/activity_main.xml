@@ -21,7 +21,7 @@
 
     <TextView
         android:id="@+id/tv1"
-        android:text="E-Fut"
+        android:text="Nyelang"
         android:textStyle="bold"
         android:textColor="@color/colorPrimary"
         android:textSize="36sp"

@@ -13,7 +13,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        login_btn_register.setOnClickListener { startActivity(Intent(this,RegisterActivity::class.java));overridePendingTransition(R.anim.transition_from_left,R.anim.transition_to_right) }
+        login_btn_register.setOnClickListener { startActivity(Intent(this,RegisterActivity::class.java));
+            overridePendingTransition(R.anim.transition_from_left,R.anim.transition_to_right) }
 
         login_btn_login.setOnClickListener { performLogin() }
     }
@@ -27,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
                 val i = Intent(this,MainActivity::class.java)
                 i.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(i)
-//                overridePendingTransition()
+                overridePendingTransition(R.anim.transition_from_left,R.anim.transition_to_right)
             }else{
                 Toast.makeText(this,"Ups, Email atau password salah",Toast.LENGTH_SHORT).show()
             }

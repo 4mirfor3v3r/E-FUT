@@ -38,7 +38,7 @@ class RegisterActivity : AppCompatActivity() {
                 val i = Intent(this,MainActivity::class.java)
                 i.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(i)
-//                overridePendingTransition()
+                overridePendingTransition(R.anim.transition_from_right,R.anim.transition_to_left)
             }else{
                 Toast.makeText(this,"Ups, Email atau password salah", Toast.LENGTH_SHORT).show()
             }
