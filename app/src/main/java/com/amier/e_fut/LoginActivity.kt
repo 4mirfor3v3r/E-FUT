@@ -13,7 +13,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        login_btn_register.setOnClickListener { startActivity(Intent(this,RegisterActivity::class.java)) }
+        login_btn_register.setOnClickListener { startActivity(Intent(this,RegisterActivity::class.java));overridePendingTransition(R.anim.transition_from_left,R.anim.transition_to_right) }
 
         login_btn_login.setOnClickListener { performLogin() }
     }

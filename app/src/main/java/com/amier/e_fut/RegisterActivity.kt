@@ -22,6 +22,7 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
+        overridePendingTransition(R.anim.transition_from_right,R.anim.transition_to_left)
         finish()
     }
 

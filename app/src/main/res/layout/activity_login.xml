@@ -97,9 +97,9 @@
         android:layout_height="wrap_content" />
     <Button
         android:id="@+id/login_btn_register"
-        android:background="@drawable/login_regist_btn_bg"
+        android:background="@drawable/login_regist_btn_bg_deactive"
         android:text="REGISTER"
-        android:textColor="@android:color/white"
+        android:textColor="#3949AB"
         android:textSize="18sp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="24dp"

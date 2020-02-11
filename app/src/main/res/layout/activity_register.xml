@@ -114,9 +114,9 @@
 
     <Button
         android:id="@+id/register_btn_login"
-        android:background="@drawable/login_regist_btn_bg"
+        android:background="@drawable/login_regist_btn_bg_deactive"
         android:text="LOGIN"
-        android:textColor="@android:color/white"
+        android:textColor="#3949AB"
         android:textSize="18sp"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="24dp"
